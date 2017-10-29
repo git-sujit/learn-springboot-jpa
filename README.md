@@ -1,6 +1,7 @@
+# convention-over-configuration strategy
 # How Spring-boot Works #
-# Create Project from STS-->Spring Boot Starter Project and select relevant packages
-# pom.xml: Bill of Material- Pick the Version of Parent and Spring/Maven pulls the right versions of JAR having Spring MVC, Tomcat etc
+	- Create Project from STS-->Spring Boot Starter Project and select relevant packages
+	- pom.xml: Bill of Material- Pick the Version of Parent and Spring/Maven pulls the right versions of JAR having Spring MVC, Tomcat etc
 	- parent: spring-boot-starter-parent: Defines all the versions of jars to be pulled for Spring MVC
 	- one dependency manages all spring MVC dependencies: spring-boot-starter-web
 	
@@ -42,6 +43,14 @@
 # Spring Data JPA(Java Persistence API - ORM): The Data Tier
 	- Object-Relational Mapping means "Class <-> Table" mapping
 	- We will use: Spring Data JPA
+	- Frameworks available in Spring Data: Cassandra, Solr, ElasticSearch, Couchbase, JPA etc
+	- H2 DBMS: IN-memory database, Written in Java, It can be embedded in Java Application or run in client-server mode
+	
+# Actuator
+	- Gets added to classpath and enables few features
+	- provides health check through REST API(GET): localhost:8080/health
+	- You can define a new port for Actuator
+
 	
 	
 	

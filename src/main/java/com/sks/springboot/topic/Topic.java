@@ -2,8 +2,10 @@ package com.sks.springboot.topic;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "TOPIC")
 public class Topic {
 	@Id
 	private String id;
